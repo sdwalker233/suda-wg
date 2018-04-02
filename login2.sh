@@ -7,14 +7,14 @@
 if [ $# -ge 1 ]; then
     username=$1
 else
-    echo -n "please input username :"
+    echo -n "please input username: "
     read username
 fi
 # read password
 if [ $# -ge 2 ]; then
     password=$2
 else
-    echo -n "please input password :"
+    echo -n "please input password: "
 	read -s password
 fi
 password=`echo -n $password | base64`
